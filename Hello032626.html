@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <!--Auto complete off--->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /** button {
+        background-color: #be0b4d;
+        color: white;
+        border: blueviolet 100px;
+        padding: 40px;
+        margin: 20px;
+      }**/
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      th {
+        padding: 15px;
+        background-color: lightblue;
+        color: rgb(255, 0, 204);
+      }
+      td {
+        color: rgb(242, 0, 255);
+      }
+      button {
+        background-color: #be0b4d;
+        color: white;
+        border: 10px solid blueviolet;
+        padding: 40px;
+        margin: 20px;
+      }
+
+      h1 {
+        color: blue;
+      }
+
+      video {
+        margin: 20px;
+      }
+
+      video {
+        display: inline-block;
+      }
+
+      a {
+        display: inline-block;
+        margin-left: 10px;
+      }
+      .video-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <!--Body begins here-->
+  <body>
+    <!--Testing the form element here-->
+
+    <form action="https://httpbin.org/post" method="post">
+     <!--- Enter your name and email address below:<br /><br />-->
+      <input
+        type="text"
+        name="username"
+        placeholder="Enter your name"
+        required
+      />
+
+      <br /><br />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <input type="submit" value="Go" />
+
+      <div>Delivery? <input type="checkbox" name="delivery" value="yes" /></div>
+      <br />
+      <br />
+      <!--Group of multiple checkboxes-->
+
+      <br />
+      <br />
+
+      <br />
+      <br />
+      <div>
+        <input type="radio" name="payment" value="Credit Card" /> Credit Card
+        <input type="radio" name="payment" value="PayPal" /> PayPal
+        <input type="radio" name="payment" value="Bitcoin" /> Bitcoin
+      </div>
+      <div>
+        Milk <input type="checkbox" name="groceries" value="Milk" />
+
+        Bread <input type="checkbox" name="groceries" value="Bread" />
+
+        Eggs <input type="checkbox" name="groceries" value="Eggs" />
+      </div>
+    </form>
+
+    <form action="https://learn.nucamp.co/show_everything.php" method="post">
+      enter avatar name:
+
+      <input type="text" name="avatarName" />
+      <input type="submit" value="Go" />
+    </form>
+    <br />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name_1</th>
+          <th>Age_2</th>
+          <th>City_3</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td colspan="2" rowspan="2">Alice</td>
+        <td>30</td>
+        <td>New York</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>25</td>
+        <td>Los Angeles</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Charlie</td>
+        <td>35</td>
+        <td>Chicago</td>
+      </tr>
+    </table>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me</button>
+    <button>HelloThere</button>
+    <br />
+    <img
+      src="../Assets/img/strawberry-png-22948.png"
+      alt="Strawberry"
+      alt="Strawberry"
+      width="200"
+      height="200"
+    />
+    <br />
+    <br />
+
+    <img
+      src="/Assets/img/react-lake.jpg "
+      alt="Strawberry"
+      width="300"
+      height="300"
+    />
+
+    <!---- <video src="path/to/video.mp4" controls></video-->
+    <div class="video-row">
+      <video controls width="400">
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+          margin="40px"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <video controls width="400">
+        <source src="../Assets/videos/mov_bbb.mp4" type="video/mp4" />
+      </video>
+
+      <a href="../Assets/videos/mov_bbb.mp4" target="_blank">
+        Click to download/watch the video
+      </a>
+
+      <video controls width="400">
+        <source src="../Assets/videos/mov_bbb.mp4" type="video/mp4" />
+      </video>
+
+      <a href="../Assets/videos/mov_bbb.mp4" target="_blank">
+        Click here to download/watch the video
+      </a>
+    </div>
+
+    <br /><br /><br /><br />
+    <h1>Hello World</h1>
+
+    <section id="install">
+      <h2>Installation</h2>
+      <p>To install, follow these steps:</p>
+      <ol>
+        <li>Download the installer</li>
+        <li>Run the installer</li>
+        <li>Follow the on-screen instructions</li>
+      </ol>
+    </section>
+
+    <section id="use">
+      <h2>Usage</h2>
+      <p>To use, follow these steps:</p>
+      <ol>
+        <li>Open the application</li>
+        <li>Navigate to the desired feature</li>
+        <li>Follow the on-screen instructions</li>
+      </ol>
+    </section>
+    <section>
+      <video
+        src="../Assets/videos/install-extension.mp4"
+        controls
+        width="400"
+      ></video>
+    </section>
+
+    <h2>Subheading</h2>
+
+    <h3>Sub-subheading</h3>
+
+    <h4>Sub-sub-subheading</h4>
+
+    <h5>Sub-sub-sub-subheading</h5>
+
+    <h6 id="contact">Sub-sub-sub-sub-subheading</h6>
+
+    <ol start="5">
+      <li>bread</li>
+      <li>milk</li>
+      <li>eggs</li>
+    </ol>
+
+    <ol>
+      <li>
+        <a href="https://code.visualstudio.com/" target="_blank"
+          >Visual Studio Code</a
+        >
+      </li>
+      <li><a href="https://www.nucamp.co" target="_blank">NuCamp</a></li>
+      <li><a href="https://www.google.com" target="_blank">Google</a></li>
+    </ol>
+
+    <ul>
+      <li>bread</li>
+      <li>milk</li>
+      <li>eggs</li>
+    </ul>
+
+    <p>Hellooo there</p>
+
+    <nav>
+      <a href="#install">Installation</a>| <a href="#use">Usage</a>|
+      <a href="#contact">Contact</a>
+    </nav>
+    <br /><br /><br /><br />
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg"
+      height="300"
+      width="=300"
+    />
+  </body>
+</html>
